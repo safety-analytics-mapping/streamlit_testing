@@ -28,7 +28,7 @@ st.bar_chart(hist_values)
 # hour_to_filter = st.slider('hour', 0, 23, 8)  # min: 0h, max: 23h, default: 8
 add_slider = st.sidebar.slider(
     'Select a range of values',
-    0.0, 23.0, (8.0, 17.0)
+    0, 23, (8, 17)
 )
 
 filtered_data = data[data['hr'].between(add_slider[0], add_slider[1])]
